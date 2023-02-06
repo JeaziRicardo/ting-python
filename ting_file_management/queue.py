@@ -16,4 +16,6 @@ class Queue(AbstractQueue):
             return self.queue.pop(0)
 
     def search(self, index):
-        """Aqui irá sua implementação"""
+        if 0 <= index <= len(self.queue):
+            return self.queue[index]
+        raise IndexError('Índice inválido.')

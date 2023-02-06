@@ -6,7 +6,7 @@ class Queue(AbstractQueue):
         self.queue = []
 
     def __len__(self):
-        """Aqui irá sua implementação"""
+        return len(self.queue)
 
     def enqueue(self, value):
         """Aqui irá sua implementação"""

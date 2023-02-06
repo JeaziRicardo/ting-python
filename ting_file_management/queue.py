@@ -9,7 +9,7 @@ class Queue(AbstractQueue):
         return len(self.queue)
 
     def enqueue(self, value):
-        """Aqui irá sua implementação"""
+        self.queue.append(value)
 
     def dequeue(self):
         """Aqui irá sua implementação"""

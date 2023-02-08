@@ -33,5 +33,4 @@ def file_metadata(instance, position):
     try:
         print(instance.search(position))
     except IndexError:
-        # O único que precisou usar o módulo sys para passar
         print('Posição inválida', file=sys.stderr)

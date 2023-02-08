@@ -1,5 +1,4 @@
 from ting_file_management.file_management import txt_importer
-import sys
 
 
 def process(path_file, instance):
@@ -17,7 +16,7 @@ def process(path_file, instance):
 
     instance.enqueue(data)
 
-    return sys.stdout.write(f"{data}\n")
+    return print(f'{data}\n')
 
 
 def remove(instance):
